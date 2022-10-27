@@ -1,0 +1,198 @@
+*{
+    
+    box-sizing: border-box;
+   
+   padding: 0px;
+   background-color: rgb(238, 245, 247);
+    
+    }
+
+[class*="div"] {
+        float: left;
+        margin-top: 10%;
+        margin-bottom: 30%;
+        
+    }
+.first{
+    margin-left: 200px ;
+    margin-top: 30px;
+    margin-right: 100px ;
+   
+}
+.first::after {
+        content: "";
+        clear: both;
+        display: block;
+        
+      }
+.divheader{
+    
+    margin-top: 15%;
+    width: 55%;
+}
+.main p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 60px;
+    color: rgb(14, 131, 185);
+    font-weight: bold;
+    margin-bottom: 2px;
+    line-height: 32px;
+  
+    
+}
+.sub p{
+    font-size: 30px;
+    line-height: 28px;
+    width: 95%;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+} 
+.createapage p a{
+    color: black;
+    cursor: pointer;
+    background-color:rgb(238, 245, 247); 
+    font-weight: bold;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    
+}
+.createapage{
+    text-align: center;
+}
+.createapage p a:hover{
+    
+    border-bottom: 1px solid black;
+}
+
+.divlogin form{
+    
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 15px;
+   
+    
+    margin-top: 1px;
+    width: 414px;
+    height: 390px;
+    text-align: center;
+   
+}
+[class*="text"]{
+    background: white;
+    width: 95%;
+    height: 17%;
+    border-radius: 6px;
+    border-color:rgb(185, 181, 181);
+    padding-left: 20px;
+    font-size:  17px; ;
+    margin-top: 14px;
+    
+}
+.btn1{
+    width: 95%;
+    height: 17%;
+    background:rgb(14, 131, 185);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+
+   
+}
+.btn1:hover{
+    background-color:rgb(6, 77, 110);
+     
+}
+
+.btn2{
+    width: 80%;
+    height: 17%;
+    background:rgb(6, 194, 62);
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 14px;
+    cursor: pointer;
+
+}
+.btn2:hover{
+    background:rgb(3, 116, 9);
+}
+
+.divlogin a{
+    text-decoration: none;
+    color:rgb(14, 131, 185);
+    background-color: #fff;
+    
+    
+}
+
+
+#footer p{
+    background-color: #fff;
+    text-align: left;
+    color: rgb(177, 167, 167);
+    padding-left: 200px ;
+    padding-right: 100px ;
+    word-spacing: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    
+    
+}
+#footer button{
+    width: 20px;
+    border: none;
+    background-color: white;
+}
+#footer button:hover{
+    background-color: rgb(36, 100, 79);
+}
+hr.solid {
+    border-top: 1px solid #bbb;
+  }
+#footer .footer1{
+    border-bottom: 1px solid #dddfe2;
+    height: 30px;
+    margin-bottom: -15px;  
+    
+}
+#footermobile{
+    display: none;
+}
+@media screen and (max-width:800px) {
+
+    [class*="div"] {
+        float: none;
+        margin-top: 5%;
+        margin-bottom: 15%;} 
+.sub p{
+    display: none;
+}
+.main p{
+    font-size: 30px;
+    text-align: center;
+}
+.first{
+   margin: auto;
+   justify-content: center;
+}
+#footer{
+   width: 100%;
+ 
+}
+#footer p{
+    display: flexbox;
+    flex-direction: row;
+}
+/* #footermobile .foot{
+    display: inline;
+} */
+        
+  } 
